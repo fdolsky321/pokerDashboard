@@ -33,9 +33,14 @@ const dashboardRoutes = [
     component: UserProfile
   },
   {
+    // path: "/table",
+    // sidebarName: "Table List",
+    // navbarName: "Table List",
+    // icon: "content_paste",
+    // component: TableList
     path: "/table",
-    sidebarName: "Table List",
-    navbarName: "Table List",
+    sidebarName: "Investors",
+    navbarName: "Investors",
     icon: "content_paste",
     component: TableList
   },
@@ -67,13 +72,13 @@ const dashboardRoutes = [
     icon: Notifications,
     component: NotificationsPage
   },
-  {
-    path: "/upgrade-to-pro",
-    sidebarName: "Upgrade To PRO",
-    navbarName: "Upgrade To PRO",
-    icon: Unarchive,
-    component: UpgradeToPro
-  },
+  // {
+  //   path: "/upgrade-to-pro",
+  //   sidebarName: "Upgrade To PRO",
+  //   navbarName: "Upgrade To PRO",
+  //   icon: Unarchive,
+  //   component: UpgradeToPro
+  // },
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];
 

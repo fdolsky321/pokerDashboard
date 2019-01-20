@@ -154,17 +154,17 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Daily Sales</h4>
+                <h4 className={classes.cardTitle}>Weekly Tournament Profits</h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
                     <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                   </span>{" "}
-                  increase in today sales.
+                  increase in last 30 days.
                 </p>
               </CardBody>
               <CardFooter chart>
                 <div className={classes.stats}>
-                  <AccessTime /> updated 4 minutes ago
+                  <AccessTime /> updated Yesterday
                 </div>
               </CardFooter>
             </Card>
@@ -182,7 +182,7 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Email Subscriptions</h4>
+                <h4 className={classes.cardTitle}>Weekly Cashgame Profits</h4>
                 <p className={classes.cardCategory}>
                   Last Campaign Performance
                 </p>
@@ -194,7 +194,7 @@ class Dashboard extends React.Component {
               </CardFooter>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          {/* <GridItem xs={12} sm={12} md={4}>
             <Card chart>
               <CardHeader color="danger">
                 <ChartistGraph
@@ -217,10 +217,10 @@ class Dashboard extends React.Component {
                 </div>
               </CardFooter>
             </Card>
-          </GridItem>
+          </GridItem> */}
         </GridContainer>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6}>
+          {/* <GridItem xs={12} sm={12} md={6}>
             <CustomTabs
               title="Tasks:"
               headerColor="primary"
@@ -260,24 +260,24 @@ class Dashboard extends React.Component {
                 }
               ]}
             />
-          </GridItem>
+          </GridItem> */}
           <GridItem xs={12} sm={12} md={6}>
             <Card>
               <CardHeader color="warning">
-                <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
+                <h4 className={classes.cardTitleWhite}>TOP Donators</h4>
                 <p className={classes.cardCategoryWhite}>
-                  New employees on 15th September, 2016
+                  List of Top Donators of JC
                 </p>
               </CardHeader>
               <CardBody>
                 <Table
                   tableHeaderColor="warning"
-                  tableHead={["ID", "Name", "Salary", "Country"]}
+                  tableHead={["ID", "Nick", "Donation", "Note"]}
                   tableData={[
-                    ["1", "Dakota Rice", "$36,738", "Niger"],
-                    ["2", "Minerva Hooper", "$23,789", "Curaçao"],
-                    ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                    ["4", "Philip Chaney", "$38,735", "Korea, South"]
+                    ["1", "Pepa123", "$ hovno", "Typek jaxvin"],
+                    ["2", "JCho mama", "$ 1", "Moje Mama"],
+                    ["3", "Samicka pro JC", "$ 0.5", "Nejlepsi kamarad"],
+                    ["4", "Ctvrty Ftipalek", "$ 0.1", "Typek z Korei"]
                   ]}
                 />
               </CardBody>
